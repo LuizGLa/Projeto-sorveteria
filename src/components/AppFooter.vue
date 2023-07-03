@@ -22,7 +22,6 @@ footer {
     background-color: #033866b3;
     color: aliceblue;
     width: 100%;
-    position: fixed;
     bottom: 0;
 }
 </style>

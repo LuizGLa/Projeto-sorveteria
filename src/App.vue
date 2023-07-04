@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <AppHeader />
+    <AppHeader
+    @change-component="changeComponent" />
    
-    <AppSection/>
+    <AppSection
+    :current-component="currentSectionComponent"/>
 
     <appFooter/>
 
@@ -24,6 +26,37 @@ export default {
     AppHeader,
     AppFooter,
     AppSection
+  },
+
+  data() {
+
+    return {
+      currentSectionComponent: 'AppSectionBanner'
+    }
+
+  },
+  
+  methods: {
+    changeComponent(value) {
+
+      let component;
+
+        switch (value) {
+          case 'home':
+            default:
+              component = 'AppSectionBanner';
+
+              break;
+
+              case 'products':
+                component = 'AppSectionPromocoes';
+
+                break;
+        }
+
+        this.currentSectionComponent = component;
+
+    }
   }
 }
 

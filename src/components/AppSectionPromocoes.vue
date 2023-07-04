@@ -27,7 +27,8 @@
                promo-title="Divirta-se com os deliciosos picolés Kids!"
                promo-content="Com cores vibrantes e sabores doces, eles são a opção perfeita para alegrar o dia das crianças (e até mesmo dos adultos). Esses picolés são feitos com ingredientes seguros e são especialmente projetados para agradar o paladar dos pequenos."
               
-            />
+            />  
+            
 
 
          </div>

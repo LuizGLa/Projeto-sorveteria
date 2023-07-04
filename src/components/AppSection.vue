@@ -2,10 +2,7 @@
 
   <div>
     
-    <AppSectionBanner/>
-    <AppSectionPromocoes/>
-    <AppSectionWhatsapp/>
-
+   <component :is="currentComponent"></component>
   
 
   </div>
@@ -24,6 +21,15 @@ export default {
     AppSectionBanner,
     AppSectionWhatsapp,
     AppSectionPromocoes
+   },
+   data() {
+    return {
+    
+    }
+   },
+
+   props: {
+    currentComponent: String
    }
 }
 

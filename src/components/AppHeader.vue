@@ -15,8 +15,8 @@
 
             <div class="links mr-2">
 
-                <a href="" class="btn mr-4">Início</a>
-                <a href="" class="btn mr-4">Promoções</a>
+                <a href="" @click.prevent="$emit('change-component', 'home')" class="btn mr-4">Início</a>
+                <a href="" @click.prevent="$emit('change-component', 'products')" class="btn mr-4">Produtos</a>
                 <a href="" class="btn mr-3">Sobre</a>
 
             </div>

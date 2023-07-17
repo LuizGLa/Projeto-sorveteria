@@ -3,15 +3,15 @@
 
         <div class="col-3">
 
-            <img :src="require('../assets/promoção/' + this.imgName)" :alt="imgInfo" class="animate__animated animate__zoomIn animate__delay-1s">
+            <img :src="require('../assets/promoção/' + this.imgName)" :alt="imgInfo" :class="delayView">
 
         </div>
 
         <div class="col-7">
 
-            <h2 class="animate__animated animate__zoomIn animate__delay-0.5s">{{ promoTitle }}</h2>
+            <h2 :class="delayView">{{ promoTitle }}</h2>
 
-            <p class="animate__animated animate__zoomIn animate__delay-0.5s">{{ promoContent }}</p>
+            <p :class="delayView">{{ promoContent }}</p>
 
           
         </div>
@@ -46,6 +46,11 @@ export default {
             type: String,
             required: true
         },
+
+        delayView: {
+            type: String,
+            required: true
+        }
 
     },
 

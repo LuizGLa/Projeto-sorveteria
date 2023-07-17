@@ -3,8 +3,7 @@
     <AppHeader
     @change-component="changeComponent" />
    
-    <AppSection
-    :current-component="currentSectionComponent"/>
+    <AppSection/>
 
     <appFooter/>
 
@@ -31,32 +30,32 @@ export default {
   data() {
 
     return {
-      currentSectionComponent: 'AppSectionBanner'
+     //currentSectionComponent: 'AppSectionBanner'
     }
 
   },
   
   methods: {
-    changeComponent(value) {
+   // changeComponent(value) {
 
-      let component;
+     // let component;
 
-        switch (value) {
-          case 'home':
-            default:
-              component = 'AppSectionBanner';
+        //switch (value) {
+        //  case 'home':
+        ///    default:
+        //      component = 'AppSectionBanner';
 
-              break;
+        ///      break;
 
-              case 'products':
-                component = 'AppSectionPromocoes';
+          //    case 'products':
+           //     component = 'AppSectionPromocoes';
 
-                break;
-        }
+             //   break;
+//}
+//
+      //  this.currentSectionComponent = component;
 
-        this.currentSectionComponent = component;
-
-    }
+   // }
   }
 }
 

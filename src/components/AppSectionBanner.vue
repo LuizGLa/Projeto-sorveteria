@@ -2,19 +2,19 @@
     <section>
 
         <div class="container">
-          <div class="card" style="--cor:#03a9f4">
+          <div class="card animate__animated animate__zoomIn animate__delay-0.5s" style="--cor:#03a9f4">
             <div class="caixaimg">
                 <img src="../assets/Produtos.jpg">
             </div>
             <div class="conteudo">
                 <h2>Produtos</h2>
                 <p>Descubra os incríveis sabores da marca "Sorvete Amigo" disponíveis em nossa sorveteria! Delicie-se com uma variedade de opções que vão encantar o seu paladar.</p>
-                <a href="">Ler mais</a>
+                <router-link to="/products">Ler mais</router-link>
             </div>
           </div>
 
 
-          <div class="card" style="--cor:#03a9f4">
+          <div class="card animate__animated animate__zoomIn animate__delay-0.5s" style="--cor:#03a9f4">
             <div class="caixaimg">
                 <img src="../assets/Sorveteria.jpg">
             </div>
@@ -24,16 +24,31 @@
                     com amigos e familiares. </p>
                 <a href="">Ler mais</a>
             </div>
-          </div>
 
+            
+          </div>
 
         </div>
 
+      
+
     </section>
+
+    
 </template>
 
 <script>
 
+
+export default {
+
+    components: {
+        
+
+
+    }
+
+}
 </script>
 
 <style scoped>
@@ -51,6 +66,7 @@ section {
    flex-wrap: wrap;
    gap: 100px 110px;
    padding: 100px 50px;
+   height: 100%;
 }
 
 .container .card {

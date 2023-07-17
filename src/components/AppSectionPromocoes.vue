@@ -9,6 +9,7 @@
                img-info="promo 1"
                promo-title="Descubra os incríveis sabores dos picolés Fresh!"
                promo-content="Cada mordida é uma explosão de sabores naturais e revigorantes que vão despertar seus sentidos. Feitos com ingredientes cuidadosamente selecionados, esses picolés oferecem uma combinação perfeita de texturas suaves e refrescantes."
+               delay-view="animate__animated animate__zoomIn animate__delay-0.5s"
                
             />
 
@@ -17,6 +18,7 @@
                img-info="promo 2"
                promo-title="Delicie-se com o refrescante sabor do picolé de açaí!"
                promo-content="Feitos com a polpa pura do açaí, esses picolés proporcionam uma explosão de sabor autêntico em cada lambida. Além de serem uma verdadeira delícia, os picolés de açaí são uma opção nutritiva, pois são ricos em antioxidantes e nutrientes. "
+               delay-view="animate__animated animate__zoomIn animate__delay-1s"
                
             />
 
@@ -26,6 +28,7 @@
                img-info="promo 3"
                promo-title="Divirta-se com os deliciosos picolés Kids!"
                promo-content="Com cores vibrantes e sabores doces, eles são a opção perfeita para alegrar o dia das crianças (e até mesmo dos adultos). Esses picolés são feitos com ingredientes seguros e são especialmente projetados para agradar o paladar dos pequenos."
+               delay-view="animate__animated animate__zoomIn animate__delay-2s"
               
             />  
             

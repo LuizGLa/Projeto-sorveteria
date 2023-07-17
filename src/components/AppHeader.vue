@@ -15,8 +15,9 @@
 
             <div class="links mr-2">
 
-                <a href="" @click.prevent="$emit('change-component', 'home')" class="btn mr-4">Início</a>
-                <a href="" @click.prevent="$emit('change-component', 'products')" class="btn mr-4">Produtos</a>
+                <router-link active-class="link-active" to="/" class="btn mr-5">Início</router-link>
+                <router-link active-class="link-active" to="/products" class="btn mr-5">Produtos</router-link>
+                
                 <a href="" class="btn mr-3">Sobre</a>
 
             </div>
@@ -71,9 +72,9 @@ header {
 }
 
 .links a:hover {
-    color: rgb(32, 126, 208);
+    color: rgb(255, 255, 255);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    background: aliceblue;
+    background: rgb(100, 164, 220);
     transition: .5s;
 
 }
@@ -81,6 +82,11 @@ header {
 .links a:focus {
     outline: none !important;
     box-shadow: none !important
+}
+
+.link-active {
+    background-color: #fff;
+    color: rgb(32, 126, 208) !important;
 }
 
 </style>

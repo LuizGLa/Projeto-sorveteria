@@ -2,8 +2,10 @@
 
   <div>
     
-   <component :is="currentComponent"></component>
-  
+
+    <router-view></router-view>
+
+    <AppSectionWhatsapp/>
 
   </div>
 
@@ -12,15 +14,13 @@
 
 
 <script>
-import AppSectionBanner from './AppSectionBanner';
+
 import AppSectionWhatsapp from './AppSectionWhatsapp';
-import AppSectionPromocoes from './AppSectionPromocoes';
 
 export default {
     components: {
-    AppSectionBanner,
-    AppSectionWhatsapp,
-    AppSectionPromocoes
+      AppSectionWhatsapp
+      
    },
    data() {
     return {
@@ -36,6 +36,7 @@ export default {
 </script>
 
 <style scoped>
+
 
 
 
